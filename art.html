@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>예술과 과학의 융합</title>
+
+<style>
+
+body{
+    background: rgb(15, 15, 15);    
+    height: 100%;
+    width: 100%;
+    transition: background-color 1s linear;
+   
+    
+}
+      
+/* the :hover that causes the background-color to change */
+
+html:hover{
+    background: "white"; 
+         
+}
+
+#red {
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    display: block;
+    padding: 16px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background:hsl(2, 80%, 62%);;
+}
+.pulseAnim_red{
+    display: block;
+    padding: 16px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: pulseAnim_red 2s infinite;
+}
+
+@keyframes pulseAnim_red{
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 169, 169, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(245, 171, 171, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(99, 49, 49, 0);
+    }
+}
+
+.pulseAnim_orange{
+    display: block;
+    padding: 16px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: pulseAnim_orange 2s infinite;
+}
+@keyframes pulseAnim_orange{
+    0% {
+        box-shadow: 0 0 0 0 rgba(250, 226, 174, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(243, 181, 88, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(99, 77, 49, 0);
+    }
+}
+
+.pulseAnim_yellow{
+    display: block;
+    padding: 16px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: pulseAnim_yeloww 2s infinite;
+}
+@keyframes pulseAnim_yeloww{
+    0% {
+        box-shadow: 0 0 0 0 rgba(233, 235, 165, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(243, 228, 88, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(99, 91, 49, 0);
+    }
+}
+.pulseAnim_green{
+    display: block;
+    padding: 16px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: pulseAnim_green 2s infinite;
+}
+@keyframes pulseAnim_green{
+    0% {
+        box-shadow: 0 0 0 0 rgba(180, 231, 167, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(119, 243, 88, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(49, 99, 51, 0);
+    }
+}
+.pulseAnim_blue{
+    display: block;
+    padding: 16px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: pulseAnim_blue 2s infinite;
+}
+@keyframes pulseAnim_blue{
+    0% {
+        box-shadow: 0 0 0 0 rgba(88, 238, 243, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(88, 212, 243, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(49, 96, 99, 0);
+    }
+}
+
+.pulseAnim_indigo{
+    display: block;
+    padding: 16px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: pulseAnim_indigo 2s infinite;
+}
+@keyframes pulseAnim_indigo{
+    0% {
+        box-shadow: 0 0 0 0 rgba(167, 162, 236, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(88, 98, 243, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(50, 49, 99, 0);
+    }
+}
+
+.pulseAnim_purple{
+    display: block;
+    padding: 16px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: pulseAnim_purple 2s infinite;
+}
+@keyframes pulseAnim_purple{
+    0% {
+        box-shadow: 0 0 0 0 rgba(135, 108, 160, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(168, 88, 243, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(81, 49, 99, 0);
+    }
+}
+
+.pulseAnim_white{
+    display: block;
+    padding: 16px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: pulseAnim_white 2s infinite;
+}
+@keyframes pulseAnim_white{
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(248, 248, 248, 0);
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div id = "background"></div>
+<div id = "red"></div>
+
+<audio id = "do" src = "do.wav" loop></audio>
+<audio id = "re" src = "re.wav" loop></audio>
+<audio id = "mi" src = "mi.wav" loop></audio>
+<audio id = "fa" src = "fa.wav" loop></audio>
+<audio id = "sol" src = "sol.wav" loop></audio>
+<audio id = "la" src = "la.wav" loop></audio>
+<audio id = "si" src = "si.wav" loop></audio>
+<audio id = "high_do" src = "high_do.wav" loop></audio>
+<audio id = "final" src = "final.wav" ></audio>
+
+<script src="anime.min.js"></script>
+<script>
+    
+    let count = 0;
+    element = document.getElementById("red");
+    pulseAnim = document.getElementsByClassName(".pulseAnim");
+    c = document.getElementsByClassName
+    element.addEventListener("mouseover",function(e){
+        
+        switch(count){
+            case 0:
+                mouseover(document.getElementById("do"),"pulseAnim_red");
+                break
+            case 1:
+                mouseover(document.getElementById("re"),"pulseAnim_orange");
+                break
+            case 2:
+                
+                mouseover(document.getElementById("mi"),"pulseAnim_yellow");
+                break
+            case 3:
+                
+                mouseover(document.getElementById("fa"),"pulseAnim_green");
+                break
+            case 4:
+                
+                mouseover(document.getElementById("sol"),"pulseAnim_blue");
+                break
+            case 5:
+                
+                mouseover(document.getElementById("la"),"pulseAnim_indigo");
+                break
+            case 6:
+                
+                mouseover(document.getElementById("si"),"pulseAnim_purple");
+                break
+            case 7:
+                
+                mouseover(document.getElementById("high_do"),"pulseAnim_white");
+                break
+        }
+           
+    }, false);
+    
+    element.addEventListener("mouseout",function(e){
+        switch(count){
+            case 0:
+                mouseout(document.getElementById("do"),"pulseAnim_red");
+                break
+            case 1:
+                mouseout(document.getElementById("re"),"pulseAnim_orange");
+                break
+            case 2:
+                mouseout(document.getElementById("mi"),"pulseAnim_yellow");
+                break
+            case 3:
+                mouseout(document.getElementById("fa"),"pulseAnim_green");
+                break
+            case 4:
+                mouseout(document.getElementById("sol"),"pulseAnim_blue");
+                break
+            case 5:
+                mouseout(document.getElementById("la"),"pulseAnim_indigo");
+                break
+            case 6:
+                mouseout(document.getElementById("si"),"pulseAnim_purple");
+                break
+            case 7:
+                mouseout(document.getElementById("high_do"),"pulseAnim_white");
+                break
+        }
+    }, false);
+
+    let num =0;
+    element.addEventListener("click",function(e){
+        
+        
+        switch(count){
+            case 0:
+                mouseout(document.getElementById("do"),"pulseAnim_red");
+                element.style.background = 'orange';
+                num += 250
+                anime({
+                    targets: element,
+                    translateX: num
+                  });
+                count++;
+                break
+            case 1:
+                mouseout(document.getElementById("re"),"pulseAnim_orange");
+                element.style.background = 'yellow';
+                num += 250
+                anime({
+                    targets: element,
+                    translateX: num
+                  });
+                count++;
+                break
+            case 2:
+                mouseout(document.getElementById("mi"),"pulseAnim_yellow");
+                element.style.background = 'green';
+                num += 250
+                anime({
+                    targets: element,
+                    translateX: num 
+                  });
+                count++;
+                break
+            case 3:
+                mouseout(document.getElementById("fa"),"pulseAnim_green");
+                element.style.background = 'blue';
+                anime({
+                    targets: element,
+                    translateY: 200
+                  });
+                count++;
+                break
+            case 4:
+                mouseout(document.getElementById("sol"),"pulseAnim_blue");
+                element.style.background = '#052856';
+                num -= 250
+                anime({
+                    targets: element,
+                    translateX: num
+                  });
+                count++;
+                break
+            case 5:
+                mouseout(document.getElementById("la"),"pulseAnim_indigo");
+                element.style.background = 'purple';
+                num -= 250
+                anime({
+                    targets: element,
+                    translateX: num
+                  });
+                count++;
+                break
+            case 6:
+                mouseout(document.getElementById("si"),"pulseAnim_purple");
+                element.style.background = 'white';
+                num -= 250
+                anime({
+                    targets: element,
+                    translateX: num
+                  });
+                count++;
+                break
+            case 7:
+                mouseout(document.getElementById("high_do"),"pulseAnim_white");
+                document.body.style.backgroundColor = "white";
+                document.getElementById("final").play(); 
+                break
+        }
+        
+        
+       
+    }, false);
+
+    function mouseover(play_sound,puls_color){
+        //play_sound.muted = false;
+        play_sound.play(); 
+        element.classList.add(puls_color);
+    }
+    function mouseout(play_sound,puls_color){
+        
+        play_sound.pause(); 
+        play_sound.currentTime = 0 
+        element.classList.remove(puls_color);
+    }
+    
+    
+   
+</script>
+
+</body>
+</html> 
